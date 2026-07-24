@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  backend:
+    build:
+      context: ./backend2
+    container_name: gscomp0001-backend
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./frontend2
+    container_name: gscomp0001-frontend
+    ports:
+      - "80:80"
